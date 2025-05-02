@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "npm install --force && next build",
+    "dev": "next dev --turbopack --force",
+    "install-deps": "npm install --force",
+    "build": "npm run install-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
