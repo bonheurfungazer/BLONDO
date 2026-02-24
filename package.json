@@ -10,11 +10,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@langchain/community": "^1.1.18",
+    "@langchain/core": "^1.1.27",
+    "@langchain/openai": "^1.2.9",
+    "@xenova/transformers": "^2.17.2",
     "canvas-confetti": "^1.9.3",
     "dom-to-image": "^2.6.0",
+    "langchain": "^0.2.20",
     "lucide-react": "^0.462.0",
     "next": "^15.3.1",
     "nextjs": "^0.0.3",
+    "pdf-parse": "^1.1.1",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-best-gradient-color-picker": "^3.0.11",
     "react-dom": "19.0.0-rc-66855b96-20241106"
@@ -23,6 +29,7 @@
     "@types/canvas-confetti": "^1.6.4",
     "@types/dom-to-image": "^2.6.7",
     "@types/node": "^20",
+    "@types/pdf-parse": "^1.1.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "daisyui": "^4.12.14",
