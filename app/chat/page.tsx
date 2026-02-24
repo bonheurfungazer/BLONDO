@@ -45,7 +45,6 @@ export default function ChatPage() {
         ]);
         setFile(null); // Clear file input
       } else {
-        // @ts-ignore
         alert(result.error || "Upload failed. No session ID returned.");
       }
     } catch (error: any) {

@@ -8,7 +8,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { RunnableSequence } from "@langchain/core/runnables";
-// @ts-ignore
+// @ts-expect-error pdf-parse type definition mismatch
 import pdf from "pdf-parse/lib/pdf-parse.js";
 import { randomUUID } from "crypto";
 
@@ -18,7 +18,7 @@ let embeddingModel: HuggingFaceTransformersEmbeddings | null = null;
 async function getEmbeddingModel() {
   if (!embeddingModel) {
     embeddingModel = new HuggingFaceTransformersEmbeddings({
-      modelName: "Xenova/all-MiniLM-L6-v2",
+      model: "Xenova/all-MiniLM-L6-v2",
     });
   }
   return embeddingModel;
