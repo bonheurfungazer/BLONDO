@@ -6,8 +6,6 @@ import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const pdfParse = require("pdf-parse");
 
 // Configuration
 const API_KEY = process.env.ORCAI_API_KEY;
@@ -34,6 +32,8 @@ export async function uploadPdf(formData: FormData) {
     const buffer = Buffer.from(arrayBuffer);
 
     // Extract text from PDF
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const pdfParse = require("pdf-parse");
     const data = await pdfParse(buffer);
     const text = data.text;
 
