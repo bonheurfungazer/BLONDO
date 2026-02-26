@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "install-deps": "npm install --force",
-    "build": "npm run install-deps && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
