@@ -10,11 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@langchain/community": "^1.1.20",
+    "@langchain/core": "^1.1.29",
+    "@langchain/openai": "^1.2.11",
+    "@langchain/textsplitters": "^1.0.1",
     "canvas-confetti": "^1.9.3",
     "dom-to-image": "^2.6.0",
+    "langchain": "^1.2.28",
     "lucide-react": "^0.462.0",
     "next": "^15.3.1",
-    "nextjs": "^0.0.3",
+    "pdf-parse": "^2.4.5",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-best-gradient-color-picker": "^3.0.11",
     "react-dom": "19.0.0-rc-66855b96-20241106"
