@@ -332,6 +332,10 @@ export default function Home() {
               <span className="text-secondary ml-2">e</span>Logo
             </div>
             <div className="flex items-center">
+              <a href="/chat-pdf" className="btn btn-outline mr-4 gap-2">
+                <span className="text-primary">Chat PDF</span>
+                <span className="badge badge-sm badge-secondary">NOUVEAU</span>
+              </a>
               <IconPicker onIconSelect={setSelectedIcon} selected={selectedIcon} />
 
               <button className="btn ml-5"
